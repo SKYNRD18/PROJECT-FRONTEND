@@ -14,7 +14,7 @@ nav {
 }
 
 .items {
-  margin: 0 10% 0 10%;
+  margin: 1%;
 }
 
 .row {
@@ -27,8 +27,7 @@ nav {
   margin-right: 40px;
   background: whitesmoke;
   padding: 30px;
-  position: fixed;
-  left: 0px;
+  position: sticky;
   top: 100px;
 }
 
@@ -52,16 +51,16 @@ img {
 }
 
 .card {
-  max-width: 300px;
+  flex: 1; /* Set card untuk mengambil ruang yang sama */
   margin: 15px;
 }
 
-.card>h3 {
+.card > h3 {
   margin: 0;
   padding: 0;
 }
 
-.card>p {
+.card > p {
   margin: 0;
   padding: 5px;
   font-size: 15px;
@@ -74,35 +73,25 @@ img {
 
 .items2 {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Agar ada jarak antar kolom */
 }
 
-.card a {
-  padding: 6px 15px 6px 15px;
-  color: white;
-  background-color: #000;
-  cursor: pointer;
-  width: 100%;
-  font-size: 16px;
-  border-radius: 16px;
-  text-decoration: none;
-}
-
-.card a:hover {
-  background-color: white;
-  color: #000;
-  border: 1px solid black;
-}
-
-.card>img {
+.card > img {
   height: 200px;
   object-fit: cover;
 }
 
 input {
   margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .items2 {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    grid-gap: 20px; /* Jarak antar kolom */
+  }
 }
 
 @media (max-width: 1400px) {
@@ -128,4 +117,8 @@ input {
   .col2 {
     padding: 0;
   }
+  .items2 {
+    grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom untuk layar kecil */
+  }
 }
+
