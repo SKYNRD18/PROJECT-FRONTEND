@@ -15,7 +15,7 @@ header {
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  background-position: center 10%; /* Posisikan gambar sedikit ke bawah */
+  background-position: center 10%;
   clip-path: none;
 }
 
@@ -24,7 +24,7 @@ header {
   header {
     background-image: url("Images/ronaldo.jpg");
     background-attachment: scroll;
-    background-position: center 70%; /* Untuk mobile, gambar lebih turun */
+    background-position: center 70%; 
   }
 }
 
