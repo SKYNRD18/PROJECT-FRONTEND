@@ -21,33 +21,31 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./js/preloader.js"></script>
+    <script src="js/navbar.js" defer></script>
   </head>
 
   <body>
     <div class="se-pre-con"></div>
     <header id="home">
       <nav>
-        <ul>
-          <li class="primary-nav">
-            <img src="Images/img-DS.png" alt="logo" />
-            <a href="#home">REDWOOD</a>
-          </li>
-          <li class="secondary-nav">
-            <a href="HTML/checkout.html">
-              <i class="fas fa-shopping-cart"></i> KERANJANG
-            </a>
-          </li>
-          <li class="secondary-nav">
-            <a href="./HTML/features.html">RINGKASAN DESAIN</a>
-          </li>
-          <li class="secondary-nav">
-          </li>
-          <li class="secondary-nav"><a href="HTML/women.html">WANITA</a></li>
-          <li class="secondary-nav"><a href="HTML/men.html">PRIA</a></li>
-          <li class="secondary-nav">
-            <a href="HTML/about-us.html">TENTANG RD</a>
-          </li>
+        <div class="primary-nav">
+          <img src="Images/img-DS.png" alt="logo" />
+          <a href="#home">REDWOOD</a>
+        </div>
+        <ul class="nav-menu">
+          <div class="secondary-nav">
+            <li><a href="HTML/about-us.html">TENTANG RD</a></li>
+            <li><a href="HTML/women.html">WANITA</a></li>
+            <li><a href="HTML/men.html">PRIA</a></li>
+            <li><a href="HTML/features.html">RINGKASAN DESAIN</a></li>
+            <li><a href="HTML/checkout.html"><i class="fas fa-shopping-cart"></i> KERANJANG</a></li>
+          </div>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <div class="pxtext">
         <span class="border">
